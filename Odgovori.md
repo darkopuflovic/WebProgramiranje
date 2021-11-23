@@ -38,3 +38,23 @@ Ukoliko imate problema sa verzijom nuget paketa (potrebna Vam je verzija `5.xx`)
 Na sajtu je moguće pronaći sve moguće verzije, i uglavnom je svaka od njih vezana za verziju `dotnet SDK-a`.
 
 https://www.nuget.org/
+
+## Pogrešna verzija MSBuild alata
+
+Ukoliko, prilikom pokretanja Visual Studio Code-a naiđete na problem sa OmniSharp paketom, koji ne prikazuje Intellisense ili bilo koje druge funkcionalnosti unutar Visual Studio Code-a, problem može da bude verzija .NET-a, što smo obradili u prethodnim pitanjima, ali takođe i problem sa verzijom MSBuild alata. Ukoliko imate instaliran Visual Studio, on u sebi sadrži ovaj alat, koji se koristi za kompilaciju. Visual Studio, ukoliko je instaliran pre Visual Studio Code-a, se nalazi iznad putanje do poslednje verzije .NET-a koja je instalirana u PATH promenjivoj, pa se njegova verzija alata i koristi.
+
+Problem može da se reši na 2 načina:
+
+1. Instalirajte najnoviji update kroz Visual Studio Installer ili
+2. U root direktorijumu projekta kreirajte `omnisharp.json` datoteku sa sledećim sadržajem:
+
+```json
+{
+    "msbuild":
+    {
+        "useBundledOnly": true
+    }
+}
+```
+
+Bilo koji od ova 2 pristupa bi trebalo da reši problem.

@@ -44,6 +44,14 @@ SQL Server za Mac operativne sisteme ne postoji, ali je moguće koristiti nekoli
 
 Instalacija ekstenzija za Visual Studio Code je identična na svim operativnim sistemima.
 
+## Podešavanja na Linux OS-u
+
+Nakon instalacije `mssql-server` i `mssql-tools` paketa, potrebno je pozvati i `sudo /opt/mssql/bin/mssql-conf setup` komandu za podešavanje šifre. Proveru, da li servis koji se koristi za komunikaciju sa bazom podataka radi, možete izvršiti sledećom komandom: `systemctl status mssql-server --no-pager`. Nakon podešavanja, moguće je koristiti **`sqlcmd`** komandu za pokretanje terminal okruženja, koje omogućava izvršavanje SQL komandi. Komandi je neophodno proslediti i sledeće argumente: `sqlcmd -S localhost -U SA -P '<YourPassword>'`.
+
+Bazu podataka, migracija može da kreira automatski ili je moguće pozvati: `CREATE DATABASE NazivBaze`, komandu da bi se kreirala iz ovog alata.
+
+Ukoliko želite da podesite connection string na ovu bazu iz projekta ili Azure Data Studio-a, on izgleda ovako: `"Server=localhost;Database=NazivBaze;User Id=SA;Password=<your password>;"` (u Azure Data Studio-u se za server koristi samo `localhost`, User Id, šifra i bira se baza koju treba otvoriti).
+
 ## Podešavanja
 
 Nakon instaliranja svih potrebnih alata, neke od njih je neophodno i podesiti. Krenino od `LocalDB` podešavanja.
