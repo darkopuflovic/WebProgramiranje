@@ -288,8 +288,7 @@ Učitavanje podataka iz baze podataka u model može da se vrši na više načina
 3. Explicit Loading
     - Podaci se učitavaju kada su potrebni posebnom `Load` ili `LoadAsync` metodom. Uz njih se koriste i `Entry`, kao i `Collection` metode.
 
-```csharp
-```
+### 
 
 1. `Lazy Loading` može da bude koristan prilikom pisanja upita, ali njegovo korišćenje vrlo lako može da preraste u problem ukoliko se nepravilno koristi. Najprostiji način njegovog korišćenja je uključivanje biblioteke:
 
