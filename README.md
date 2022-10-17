@@ -7,3 +7,8 @@ Ovde možete pronaći odgovore na najčešća pitanja, kao i savete kako da kori
 ### [Instalacije](Instalacije.md)
 ### [Odgovori](Odgovori.md)
 ### [Saveti](Saveti.md)
+
+Ostali korisni linkovi:
+
+### [GitHub podešavanje](Dokumenti/GitHub.pdf)
+### [Regularni izrazi](Dokumenti/Regularni%20izrazi.pdf)
