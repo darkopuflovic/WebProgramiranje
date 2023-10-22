@@ -10,7 +10,7 @@
 
 [LocalDB](https://docs.microsoft.com/en-us/sql/database-engine/configure-windows/sql-server-express-localdb)
 
-[.NET 5 SDK](https://dotnet.microsoft.com/download/visual-studio-sdks)
+[.NET SDK (aktuelna verzija)](https://dotnet.microsoft.com/download/visual-studio-sdks)
 
 Sve potrebne instalacije su dostupne na linkovima iznad. Visual Studio Code dolazi sa podrškom za `JavaScript` i `TypeScript` nakon instalacije. Da bi u njemu postojala podrška za `C#`, neophodno je instalirati `C# ekstenziju` i `OmniSharp`. Ekstenzije se instaliraju klikom na dugme `Extensions` sa leve strane:
 
