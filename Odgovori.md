@@ -19,21 +19,21 @@ Postoji nekoliko rešenja za ovaj problem:
 
 ## Problem sa verzijom .NET-a
 
-Jako retko, može da se javi i problem prilikom pokretanja bilo koje `dotnet` komande. Problem, naravno, može da se desi i kada nije instaliran ni jedan `.NET SDK` (verzija `5.x`) konkretno u našem slučaju.
+Jako retko, može da se javi i problem prilikom pokretanja bilo koje `dotnet` komande. Problem, naravno, može da se desi i kada nije instaliran ni jedan `.NET SDK` (verzija `x.x`, kao što su 5.0, 6.0, 7.0...).
 
 Ipak, moguće je da se ovaj problem javi i ukoliko je adekvatna verzija već instalirana i to u 2 slučaja:
 
-1. Ukoliko je putem Visual Studio Installer-a instalirana druga verzija, npr. `3.xx`. U ovom slučaju najlakše rešenje je da se instalira update za Visual Studio. Danas, kada se pojavio i `.NET 6`, moguće je da će ovom prilikom da vam bude instaliran i on, a zaobiđena odgovarajuća instalacija.
-Ukoliko želite da budete sigurni da ste instalirali odgovoarajuću verziju `.NET 5` framework-a, najbolje je preuzeti je sa sajta, instalirati i podesiti da njegova putanja u `PATH` promenjivoj bude na prvom mestu (pogledajte: Problem sa verzijom LocalDB-a).
+1. Ukoliko je putem Visual Studio Installer-a instalirana druga verzija, npr. `3.xx`. U ovom slučaju najlakše rešenje je da se instalira update za Visual Studio. Uz pojavu novih .NET verzija, moguće je da vam je i ta verzija instalirana, a zaobiđena odgovarajuća instalacija.
+Ukoliko želite da budete sigurni da ste instalirali odgovoarajuću verziju `.NET X`, najbolje je preuzeti je sa sajta, instalirati i podesiti da njegova putanja u `PATH` promenjivoj bude na prvom mestu (pogledajte: Problem sa verzijom LocalDB-a).
 
-2. Takođe, ukoliko je verzija `5.xx` instalirana, a ona nije osnovna prilikom pozivanja komande za kreiranje projekta, moguće je koristiti i argument: `dotnet new webapi -f net5.0`. Ovaj argument obezbeđuje da svaki projekat bude kreiran korišćenjem .NET verzije koju ste uneli.
+2. Takođe, ukoliko je verzija `x.x.xx` (5.0.17, 6.0.23, 7.0.12, ...) instalirana, a ona nije osnovna prilikom pozivanja komande za kreiranje projekta, moguće je koristiti i argument: `dotnet new webapi -f netx.x` (x može da bude 5.0, 6.0, 7.0, ...). Ovaj argument obezbeđuje da svaki projekat bude kreiran korišćenjem .NET verzije koju ste uneli.
 
-3. Još jedan problem koji jako retko može da se javi, je da ste ranije imali instaliranu 32-bitnu verziju .NET-a, a onda je izbrisali, pa instalirali 64-bitnu (ili obrnuto). U ovom slučaju je neophodno proveriti `PATH` promenjivu i utvrditi koja je prva putanja koja sadrži `dotnet.exe` fajl. Ukoliko to nije verzija `5.xx`, onda možete da joj zamenite mesta sa verzijom 5 ili da je izbrišete iz `PATH` promenjive, ukoliko **Vam nije potrebna**.
+3. Još jedan problem koji jako retko može da se javi, je da ste ranije imali instaliranu 32-bitnu verziju .NET-a, a onda je izbrisali, pa instalirali 64-bitnu (ili obrnuto). U ovom slučaju je neophodno proveriti `PATH` promenjivu i utvrditi koja je prva putanja koja sadrži `dotnet.exe` fajl. Ukoliko to nije verzija `x.x.xx`, onda možete da joj zamenite mesta odgovarajućom verzijom ili da je izbrišete iz `PATH` promenjive, ukoliko **Vam nije potrebna**.
 
 ## Pogrešna verzija Nuget paketa
 
-Ukoliko imate problema sa verzijom nuget paketa (potrebna Vam je verzija `5.xx`), a instalira se verzija starija ili novija od nje, onda je moguće koristiti sledeću komandu:
-- `dotnet add package Microsoft.EntityFrameworkCore.Proxies --version 5.0.12` (primer)
+Ukoliko imate problema sa verzijom nuget paketa (potrebna Vam je verzija `x.x.xx`), a instalira se verzija starija ili novija od nje, onda je moguće koristiti sledeću komandu:
+- `dotnet add package Microsoft.EntityFrameworkCore.Proxies --version x.x.xx` (pogledajte na nuget-u verzije koje su dostupne, kao 7.0.12...)
 
 Na sajtu je moguće pronaći sve moguće verzije, i uglavnom je svaka od njih vezana za verziju `dotnet SDK-a`.
 

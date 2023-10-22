@@ -2,7 +2,7 @@
 
 ## Kreiranje aplikacije
 
-Kreiranje Web API aplikacije se vrši korišćenjem `dotnet new webapi` komande. Ukoliko je verzija .NET SDK-a različita od 5.x, neophodno je koristiti komandu sa dodatkom atributa `-f`: `dotnet new webapi -f net5.0`. Na ovaj način se obezbeđuje da će se aplikacija kreirati korišćenjem verzije 5.x .NET SDK-a.
+Kreiranje Web API aplikacije se vrši korišćenjem `dotnet new webapi` komande. Ukoliko je verzija .NET SDK-a različita od 5.x, neophodno je koristiti komandu sa dodatkom atributa `-f`: `dotnet new webapi -f netx.x` (gde x.x predstavlja željenu verziju, 5.0, 6.0, 7.0...). Na ovaj način se obezbeđuje da će se aplikacija kreirati korišćenjem verzije x.x .NET SDK-a.
 
 .NET Core aplikacije (od prve verzije .NET Core), projektnom posmatraju sve što se nalazi u root direktorijumu. Tako svi direktorijumi koji se nalaze u istom direktorijumu, koji je kreiran ovom komandom se posmatraju kao datoteke koje pripadaju našem projektu.
 
@@ -22,7 +22,7 @@ Nakon klika na dugme `Advanced` u zavisnosti od browser-a, potrebno je još klik
 
 Ukoliko je verzija .NET SDK-a koja se koristi pogrešna, to može da se zaključi iz `.csproj` datoteke. Ukoliko se koristi verzija 5.x, TargetFramework linija treba da izgleda ovako:
 
-`<TargetFramework>net5.0</TargetFramework>`
+`<TargetFramework>netx.x</TargetFramework>` (5.0, 6.0, 7.0...)
 
 ## Podešavanja aplikacije
 
@@ -58,8 +58,8 @@ Druga referenca se koristi za migracije, dok se prva koristi za komunikaciju sa 
 
 Ukoliko se ovom prilikom javi problem, potrebno je dodati i verziju paketa koji se instalira:
 
-`dotnet add package Microsoft.EntityFrameworkCore.SqlServer --version 5.0.12`,
-`dotnet add package Microsoft.EntityFrameworkCore.Design --version 5.0.12`.
+`dotnet add package Microsoft.EntityFrameworkCore.SqlServer --version x.x.xx` (5.0.12, 6.0.12, 7.0.12...),
+`dotnet add package Microsoft.EntityFrameworkCore.Design --version x.x.xx`.
 
 Nakon uključivanja biblioteka, moguće je koristiti alat za migraciju.
 
