@@ -20,7 +20,7 @@ Ova komanda kreira lokalni sertifikat koji omogućava browser-u da pokrene aplik
 
 Nakon klika na dugme `Advanced` u zavisnosti od browser-a, potrebno je još kliknuti i na `Proceed to ...` ili `Accept the Risk and Continue`, nakon čega će stranica biti otvorena.
 
-Ukoliko je verzija .NET SDK-a koja se koristi pogrešna, to može da se zaključi iz `.csproj` datoteke. Ukoliko se koristi verzija 5.x, TargetFramework linija treba da izgleda ovako:
+Ukoliko je verzija .NET SDK-a koja se koristi pogrešna, to može da se zaključi iz `.csproj` datoteke. Ukoliko se koristi verzija x.x, TargetFramework linija treba da izgleda ovako:
 
 `<TargetFramework>netx.x</TargetFramework>` (5.0, 6.0, 7.0...)
 
