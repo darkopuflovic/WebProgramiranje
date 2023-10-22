@@ -14,9 +14,14 @@
 
 Sve potrebne instalacije su dostupne na linkovima iznad. Visual Studio Code dolazi sa podrškom za `JavaScript` i `TypeScript` nakon instalacije. Da bi u njemu postojala podrška za `C#`, neophodno je instalirati `C# ekstenziju` i `OmniSharp`. Ekstenzije se instaliraju klikom na dugme `Extensions` sa leve strane:
 
-![Slika](Slike/CSharp.png)
+![C# ekstenzija](Slike/CSharp.png)
+![C# DevKit ekstenzija](Slike/CSharpDevKit.png)
+![C# IntelliCode](Slike/CSharpIntelliCode.png)
+
+Najnovija C# ekstenzija se više ne razvija od strane OmniSharp tima, već je razvija Microsoft. Uz nju su pridodate i 2 nove ekstenzije, C# DevKit i C# IntelliCode. Korišćenjem ove dve ekstenzije se proširuju mogućnosti koje C# okruženje u Visual Studio Code-u nudi na poboljšani IntelliSense kao i korišćenje IntelliCode-a, koji su od nedavno deo Visual Studio-a. Da bi koristili ove dve ekstenzije, neophodno je registrovati se, na identičan način kao što je to slučaj sa Visual Studiom, pa je neophodna i licenca ukoliko se koristi komercijalno. Ovo nije neophodno. I dalje je moguće koristiti C# u kombinaciji sa OmniSharp-om, koji nudi sasvim dovoljno mogućnosti za korišćenje iz Visual Studio Code-a.
 
 Nakon što se ova ekstenzija instalira, prvi put prilikom pokretanja bilo koje C# datoteke, pojaviće se prozor sa progresom instalacije `OmniSharp-a`. Neophodno je dopustiti ovoj instalaciji da se izvrši do kraja, a kada se pojavi tekst `Finished.` `C#` ekstenziju je moguće koristiti sa svim pogodnostima koje pruža.
+Ukoliko se koristi nova C# ekstenzija, OmniSharp se ne instalira, ali će se instalirati dodatni paketi (za Razor stranice...). Kao i u slučaju C# ekstenzije iznad, obavezno je dopustiti tim instalacijama da se završe pre nego što sve funkcionalnosti budu dostupne.
 
 Od korišćenih tehnologija, pomenuću još `Windows Terminal`. On nije neophodan za razvoj Web API aplikacija, ali može da olakša pokretanje i kontrolu aplikacija zato što nudi rad sa tabovima.
 
@@ -28,9 +33,9 @@ Instalacija većine alata koje je moguće koristiti na Windows operativnom siste
 
 Instalacija za Azure Data Studio se nalazi na istoj adresi, koja se nalazi u odeljku za Windows operativni sistem. Ostale instalacije možete pronaći na:
 
-[Visual Studio Code](https://code.visualstudio.com/download)
+[Visual Studio Code](https://code.visualstudio.com/download/)
 
-[.NET 5 SDK](https://dotnet.microsoft.com/download/dotnet/5.0)
+[.NET SDK](https://dotnet.microsoft.com/download/dotnet/)
 
 [SQL Server za Linux](https://docs.microsoft.com/en-us/sql/linux/sql-server-linux-overview)
 
