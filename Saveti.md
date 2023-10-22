@@ -2,7 +2,7 @@
 
 ## Kreiranje aplikacije
 
-Kreiranje Web API aplikacije se vrši korišćenjem `dotnet new webapi` komande. Ukoliko je verzija .NET SDK-a različita od 5.x, neophodno je koristiti komandu sa dodatkom atributa `-f`: `dotnet new webapi -f netx.x` (gde x.x predstavlja željenu verziju, 5.0, 6.0, 7.0...). Na ovaj način se obezbeđuje da će se aplikacija kreirati korišćenjem verzije x.x .NET SDK-a.
+Kreiranje Web API aplikacije se vrši korišćenjem `dotnet new webapi` komande. Ukoliko je verzija .NET SDK-a različita od x.x, neophodno je koristiti komandu sa dodatkom atributa `-f`: `dotnet new webapi -f netx.x` (gde x.x predstavlja željenu verziju, 5.0, 6.0, 7.0...). Na ovaj način se obezbeđuje da će se aplikacija kreirati korišćenjem verzije x.x .NET SDK-a.
 
 .NET Core aplikacije (od prve verzije .NET Core), projektnom posmatraju sve što se nalazi u root direktorijumu. Tako svi direktorijumi koji se nalaze u istom direktorijumu, koji je kreiran ovom komandom se posmatraju kao datoteke koje pripadaju našem projektu.
 
